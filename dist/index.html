@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Four elemental buttons brought to life with interactive WebGL shaders and particles.">
+  <title>Elements — Particle Buttons</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%23080808'/%3E%3Cpath d='M20 6C35 19 30 32 20 34C10 32 5 23 15 14L18 21Z' fill='none' stroke='%23ff805c' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main id="experience" aria-label="Interactive elemental particle buttons">
+    <canvas id="webgl" aria-hidden="true"></canvas>
+    <header><span class="wordmark">ELEMENTS<span class="wordmark-dot">®</span></span><span class="edition">AN INTERACTIVE STUDY&nbsp; / &nbsp;01—04</span></header>
+    <div id="buttons" role="group" aria-label="Choose an element"></div>
+    <p id="fallback" hidden>WebGL is unavailable. Please open this page in a browser with hardware acceleration enabled.</p>
+    <footer>
+      <p class="instruction"><span class="status-dot"></span><span id="instruction">HOVER TO AWAKEN · CLICK TO EXPLORE</span></p>
+      <nav aria-label="Elements"><button class="arrow" id="previous" aria-label="Previous element">←</button><div id="pagination"></div><button class="arrow" id="next" aria-label="Next element">→</button></nav>
+      <span class="footer-note">FIRE &nbsp;·&nbsp; SUN &nbsp;·&nbsp; AIR &nbsp;·&nbsp; HEART</span>
+    </footer>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
